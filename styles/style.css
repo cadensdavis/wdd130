@@ -13,9 +13,7 @@ h1 {
     color: steelblue;
 }
 
-p {
-    padding: 0px;
-}
+p { padding: 0; }
 
 main img {
     width: 150px;
