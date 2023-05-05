@@ -80,14 +80,14 @@ nav a:hover {
 
 /* Class & ID Selectors */
 
-/* .hero-img img {
-    width:;
-} */
-/* 
+.hero-img img {
+    width: 100%;
+} 
+ 
 article img {
     width: 100%;
-} */
+}
 
 .sociallinks {
-    text-align: right;
+    clear: right;
 }
