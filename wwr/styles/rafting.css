@@ -23,8 +23,9 @@
 
 body{
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 100%;
     padding: 20px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
