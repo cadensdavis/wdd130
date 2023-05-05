@@ -16,26 +16,53 @@
     --paragraph-font: 'Quicksand', serif;
 
     --nav-background-color: #41D3BD;
-    --nav-link-color: #218B84;
+    --nav-link-color: #FFFFF2;
     --nav-hover-link-color: #218B84;
     --nav-hover-background-color: #41D3BD;
+
+    --alpha: 0.8;
 }
 
 body{
     font-family: var(--paragraph-font);
-    max-width: 100%;
+    max-width: 960px;
     padding: 20px;
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+h1 {
+    position: absolute;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 240, 0.534);
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+article {
+    position: absolute;
+    margin: 0;
+    background-color: rgba(255, 255, 240, 0.534);
+    top: 300px;
+}
+
+article img {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
 header{
-    position: relative;
+    
+    display: inline;
     width: 100%;
     padding: 20px;
     background-color: var(--accent1-color);
@@ -59,36 +86,45 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link, nav a :visited {
+/* nav a:link, nav a :visited {
     color: var(--nav-link-color);
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
+} */
 
 #adventue-waits {
-    position: relative;
     text-align: center;
 }
 
 #adventue-waits img{
     width: 300px;
     height: auto;
-    text-align: center;
 }
+
 
 /* Class & ID Selectors */
 
-.hero-img img {
-    width: 100%;
-} 
- 
-article img {
-    width: 100%;
+
+.hero {
+    position: relative;
 }
 
-.sociallinks {
-    clear: right;
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+
+
+
+/* .sociallinks {
+    align-items: end;
+} */
+
+#logo {
+    float: left;
 }
