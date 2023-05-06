@@ -129,9 +129,9 @@ nav a:hover {
 
 
 
-/* .sociallinks {
-    right: 0;
-} */
+.sociallinks {
+    text-decoration: none;
+}
 
 #logo {
     float: left;
