@@ -25,13 +25,13 @@
 
 body{
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 100%;
     padding: 20px;
     margin: 0 auto;
 }
 
 main {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -63,7 +63,7 @@ article {
 }
 
 .hero article img {
-    width: 150px;
+    width: 200px;
     height: auto;
     float: right;
     margin: 0;
@@ -72,15 +72,16 @@ article {
 header{
     display: grid;
     grid-template-columns: 300px  120px 1fr;
-    grid-template-rows: repeat(3, 40px);
+    grid-template-rows: 10px 1fr 10px;
     width: 100%;
+    height: 150px;
     padding: 10px;
     background-color: var(--accent1-color);
 }
 
-header img {
-    max-width: 300px;
-}
+/* header img {
+    display: grid;
+} */
 
 p {
     text-align: center;
@@ -99,6 +100,7 @@ nav a {
     flex-direction: row;
     color: var(--nav-link-color);
     text-decoration: none;
+    font-size: 2rem;
     padding: 1rem;
     flex: 1 1 300%;
 }
@@ -112,18 +114,48 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+footer {
+    display:grid;
+}
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    background-color: var(--nav-background-color);
+
+}
+
+
+
+
 
 
 
 /* Class & ID Selectors */
+/* .adventue-waits section{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 100px 500px;
+
+} */
+.adventue-waits h2{
+    display: grid;
+    font-size: 3rem;
+    grid-column: 2/5 ;
+    grid-row: 1;
+    align-content: center;
+    justify-content: center;
+}
 
 .adventue-waits section{
     display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 100px 300px;
 }
-
 .adventue-waits img{
-    display: flex;
-    width: 300px;
+    display: grid;
+    grid-row: 2;
+    width: 100%;
     height: auto;
 }
 
@@ -131,13 +163,39 @@ nav a:hover {
 .history section{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: repeat(3, 30%);
+    grid-template-rows: repeat(3, 200px);
+    align-content: center;
+    justify-content: center;
+}
+
+.history img{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+    align-content: center;
 }
 
 .history h2 {
     grid-column: 2;
+    font-size: 3rem;
 }
 
+.history p.left{
+    grid-column: 1;
+    grid-row: 1;
+    justify-items: center;
+    align-items: center;
+}
+
+.history p.right{
+    grid-column: 3;
+    grid-row: 1;
+    justify-items: center;
+    align-items: center;
+}
 
 .hero {
     position: relative;
@@ -153,7 +211,7 @@ nav a:hover {
     display: grid;
     grid-column: 3/5;
     grid-row: 2;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
 }
 
@@ -166,17 +224,17 @@ nav a:hover {
 
 
 
-.sociallinks{
-    display: flex;
-    text-decoration: none;
-    justify-content: flex-end;
-    align-self: flex-end;
-
+.sociallinks a{
+    display: grid;
+    grid-column: 3;
+    justify-content: center;
+    align-content: center;
 }
 
 .logo {
-    display: flex;
-    grid-row: 1;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/4;
     justify-content: center;
-    align-content: center; 
+    align-content: center;
 }
