@@ -30,7 +30,6 @@ fieldset {
     height: 400px;
     display: flex;
     flex-direction: row;
-    align-items: left;
 }
 
 button {
