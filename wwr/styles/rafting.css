@@ -138,6 +138,21 @@ footer {
     top: 350px;
 }
 
+
+.sign-up section{
+    display: grid;
+    width: 1200px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+}
+.sign-up {
+    background-color: var(--primary-color);
+}
+
+
 /*  */
 /*  */
 /* Contact Us Page */
@@ -186,19 +201,6 @@ form {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-
-/* fieldset {
-    display: grid;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-}
-
-legend {
-    padding: 0.5rem;
-    color: navy;
-    font-size: 1.3em;
-} */
 
 label, input, button, select, textarea {
     font-family:'Quicksand', serif;
