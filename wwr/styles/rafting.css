@@ -386,7 +386,7 @@ iframe {
 
 .trips-heading {
     font-size: 50px;
-    background-color:  	rgba(0, 67, 74, .734) ;
+    background-color:  	rgba(3, 103, 114, 0.734) ;
     padding: 1rem;
     margin: 1rem;
 }
@@ -397,9 +397,12 @@ iframe {
 }
 
 .trips img {
-    display: grid;
     height: 350px;
     width: auto;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+
 }
 
 .day, .weekend, .week {
@@ -408,4 +411,7 @@ iframe {
     border: 1px solid var(--primary-color);
     padding: 1rem;
     text-align: center;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
 }
