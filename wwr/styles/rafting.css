@@ -123,9 +123,11 @@ footer {
 
 }
 
-
-
+/*  */
+/*  */
 /* Contact Us Page */
+/*  */
+/*  */
 
 .contact {
     display: grid;
@@ -265,8 +267,12 @@ iframe {
     max-width: 100%;
 }
 
-
+/*  */
+/*  */
 /* About Us Page */
+/*  */
+/*  */
+
 .adventue-waits h2{
     display: grid;
     font-size: 3rem;
@@ -372,3 +378,34 @@ iframe {
     align-content: center;
 }
 
+/*  */
+/*  */
+/* Trips Page */
+/*  */
+/*  */
+
+.trips-heading {
+    font-size: 50px;
+    background-color:  	rgba(0, 67, 74, .734) ;
+    padding: 1rem;
+    margin: 1rem;
+}
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.trips img {
+    display: grid;
+    height: 350px;
+    width: auto;
+}
+
+.day, .weekend, .week {
+    max-width: 100%;
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
