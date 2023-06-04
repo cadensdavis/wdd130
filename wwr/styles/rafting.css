@@ -152,6 +152,21 @@ footer {
     background-color: var(--primary-color);
 }
 
+.bottom-info {
+    display: grid;
+    grid-template-columns: 50px 1fr 20px 1fr 50px;
+    grid-template-rows: 1fr 20px 100px;
+}
+
+.index-left {
+    display: grid;
+    grid-column: 2;
+}
+
+.index-right {
+    display: grid;
+    grid-column: 4;
+}
 
 /*  */
 /*  */
