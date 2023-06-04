@@ -125,6 +125,17 @@ footer {
 
 /*  */
 /*  */
+/* Index Page */
+/*  */
+/*  */
+
+.index-head-img img{
+    width: 100%;
+    height: auto;
+}
+
+/*  */
+/*  */
 /* Contact Us Page */
 /*  */
 /*  */
