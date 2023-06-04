@@ -30,7 +30,8 @@
     </header>
 
     <main>
-
+        <section class="contact">
+        <div class="contact-info">
         <h2>Contact Us</h2>
 
 
@@ -42,23 +43,28 @@
         <p> Address: 45.425957501702165, -116.31193981565609</p>
         <p>Phone: (999) 999-9999 </p>
         <p>Email: <a href="mailto:">greatadventureraftingID@gmail.com</a></p>
+        </div>
         <div class="map">
             <!-- Imbedded map of Riggins ID -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9418.903718406626!2d-116.3169198709876!3d45.42432387328077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1685602819089!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        </section>
 
-        <form class="form">
-
+        <form>
+            <div class="form-item column1">
             <!-- Getting name -->
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname">
-        
+            </div>
+            
+            <div class="form-item column1">
             <!-- Getting email -->
             <label for="useremail">Email:</label>
             <input type="email" id="useremail" name="useremail">
+            </div>
             
             <!-- Options of what the reason for the message is for -->
-            <div class="purpose">
+            <div class="form-item purpose">
                 <label for="purpose">Purpose of Message</label>
                 <ul>
                     <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
@@ -72,13 +78,18 @@
                 </ul>
             </div>
 
+            <div class="form-item message">            
             <!-- Text box for the message -->
             <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" rows="4"></textarea>
+            </div>
 
+            <div> 
             <!-- Subscription Question -->
             <label for="newsletter">Please subscribe me to the monthly newsletter</label>
             <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+
 
             <!-- Submit Button -->
             <button type="submit">Submit</button>

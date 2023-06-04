@@ -81,10 +81,6 @@ header{
     background-color: var(--accent1-color);
 }
 
-/* header img {
-    display: grid;
-} */
-
 p {
     text-align: center;
     padding: 25px;
@@ -127,21 +123,148 @@ footer {
 
 }
 
+
+
+/* Contact Us Page */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr 150px;
+}
+
+.contact-info {
+    display: grid;
+    grid-row: 2;
+    grid-row: 2;
+    background-color: var(--secondary-color);
+}
+
+.map {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+form {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    display: grid;
+    margin: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* fieldset {
+    display: grid;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+} */
+
+label, input, button, select, textarea {
+    font-family:'Quicksand', serif;
+}
+
+label {
+    width: 650px;
+    text-align: right;
+    padding: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+textarea {
+    display: grid;
+    vertical-align: bottom;
+    width: 650px;
+    justify-content: center;
+    justify-self: center;
+}
+
+button {
+    align-items: center;
+    width: 450px;
+    margin: 1rem;
+    background-color: var(--nav-background-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+button:hover { 
+    background-color: var(--secondary-color);
+    color: #218B84;
+}
+
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.purpose label{
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+.message label{
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.column1 label {
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.column1 {
+    width: 650px;
+    margin: 0.5rem 0;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.column3 label{
+    text-align: center;
+}
+
 iframe {
     max-width: 100%;
 }
 
-
-
-
-
-/* Class & ID Selectors */
-/* .adventue-waits section{
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 100px 500px;
-
-} */
 
 /* About Us Page */
 .adventue-waits h2{
@@ -249,11 +372,3 @@ iframe {
     align-content: center;
 }
 
-/* Contact Us Page */
-
-.form {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    display: flex;
-    -ms-flex-align: center;
-}
